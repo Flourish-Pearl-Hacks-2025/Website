@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+*{
+    /* margin: 0;
+    padding: 0; */
+    font-family: Inria-Serif;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --lightgreen: #d0f1b7;
+    --darkgreen: #556542;
+    --yellow:#fbe7b4;
+}
+  
+/* .container{
+    width: 100%;
+    height: 100vh;
+} */
+
+.container1 {
+    /* width: 100%;
+    height: 100vh;
+    background-color: var(--lightgreen);
+
+    display: flex;
+    justify-content: space-between;
+    align-items:end; */
+
+    background-color: #d0f1b7;
+    display: flex;
+    flex-direction: column; /* Aligns container A & B in a column */
+    align-items: center; /* Centers them horizontally */
+    /*justify-content: center;*/ /* Centers them vertically */
+    height: 100vh; /* Full viewport height */
+
+}
+
+.main{
+    display: flex;
+    justify-content: space-between; 
+    padding-top: 5%;
+    width: 95%; /* width of container */
+    margin-bottom: 0px; /* space between A & B */
+
+}
+
+
+.intro {
+    font-size: 25px;
+    margin-left: 145px;
+    color: var(--darkgreen);
+}
+
+
+.left-content {
+    max-width: 40%;
+    padding-left: 0px;
+
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content:center;
+    /* display: flex;
+    justify-content: flex-end; */
+
+}
+.right-content {
+    max-width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 0px;
+}
+.app-images {
+    /* max-width: 100%;
+    height: auto; */
+}
+
+.container2 {
+    /* width: 100%;
+    height: 100vh;
+    background-color: var(--lightgreen);
+
+    display: flex;
+    justify-content: space-between;
+    align-items:end; */
+
+    background-color: var(--darkgreen);
+    display: flex;
+    flex-direction: column; /* Aligns container A & B in a column */
+    align-items: center; /* Centers them horizontally */
+    /*justify-content: center;*/ /* Centers them vertically */
+    height: 100vh; /* Full viewport height */
+
+}
+
+
+
+/* Bottom arrow button */
+.arrow {
+    transition-duration: 10s;
+}
+
+.arrow img {
+    width: 75px;
+    height: auto;
+    cursor: pointer;
+}
+
+.arrow:hover img {
+    padding-top: 50px;
+    width: 90px;
+
+}
+
