@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: REGULAR;
+    src: url("/tan-nimbus.otf") format("opentype");
+}
+
 *{
     /* margin: 0;
     padding: 0; */
     font-family: Inria-Serif;
+    color: var(--darkgreen);
     box-sizing: border-box;
 
 }
@@ -47,8 +53,10 @@
 
 
 .intro {
+    text-align: left;
     font-size: 25px;
-    margin-left: 145px;
+    margin-right: 100px;
+    margin-left: 10px;
     color: var(--darkgreen);
 }
 
@@ -72,8 +80,8 @@
     padding-left: 0px;
 }
 .app-images {
-    /* max-width: 100%;
-    height: auto; */
+    max-width: 80%;
+    height: auto;
 }
 
 .container2 {
@@ -87,13 +95,27 @@
 
     background-color: var(--darkgreen);
     display: flex;
-    flex-direction: column; /* Aligns container A & B in a column */
+    flex-direction: column; /* Aligns in a column */
     align-items: center; /* Centers them horizontally */
-    /*justify-content: center;*/ /* Centers them vertically */
+    justify-content: center; /* Centers them vertically */
     height: 100vh; /* Full viewport height */
 
 }
 
+.centered{
+    width: 50%;
+}
+
+h2{
+    font-family: REGULAR;
+    font-size: 70px;
+    color: var(--yellow);
+}
+p{
+    text-align: center;
+    font-size: 25px;
+    color: var(--lightgreen);
+}
 
 
 /* Bottom arrow button */

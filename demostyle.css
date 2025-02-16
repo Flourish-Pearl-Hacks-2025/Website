@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+@font-face {
+    font-family: REGULAR;
+    src: url("/tan-nimbus.otf") format("opentype");
+}
+
+:root {
+    --lightgreen: #effae6;
+    --darkgreen: #556542;
+    --lightyellow:#fbe7b4;
+    --darkyellow:#f6c477;
+}
+
+body{
+    background-color: var(--lightgreen);
+    color: var(--darkgreen);
+    font-family: Inria-Serif;
+    font-size: 100px;
+    padding: 0;
+    margin: 0;
+}
+div{
+    display: flex;
+    justify-content: center;
+}
+.sideside{
+    gap: 100px;
+}
+.normal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    font-size: 35px;
+}
+section{
+    display: grid;
+    place-items: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+h1{
+    font-family: REGULAR;
+    color: var(--darkgreen);
+    font-size: 70px;
+}
+h2{
+    color: var(--darkgreen);
+}
+p{
+    text-align: center;
+    color: var(--darkgreen);
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 3s; /* fade in animation */
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translate(0);
+}
+
+
+/* Slide show */
+body,
+#slider,
+.wrap,
+.slide-content {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.wrap {
+  position: relative;
+}
+
+.slide {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slide1 {
+  background-image: url("images/p1login.png")
+}
+.slide2 {
+  background-image: url("images/p2garden.png");
+}
+.slide3 {
+  background-image: url("images/p3totalplants.png");
+}
+
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.slide-content span {
+  font-size: 5rem;
+  color: #fff;
+}
+
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  margin-top: -35px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+#arrow-left {
+  border-width: 30px 40px 30px 0;
+  border-color: transparent #fff transparent transparent;
+  left: 0;
+  margin-left: 30px;
+}
+
+#arrow-right {
+  border-width: 30px 0 30px 40px;
+  border-color: transparent transparent transparent #fff;
+  right: 0;
+  margin-right: 30px;
+}
